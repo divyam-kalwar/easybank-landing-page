@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+a{
+    text-decoration: none;
+    color: #808080;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20em;
+    height: 8vh;
+}
+.nav-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:7.5vh;
+}
+.nav-element:hover{
+   border-bottom: solid;
+   border-width: 0.5vh;
+   border-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(197, 75%, 46%)) 1;
+}
+.invite{
+    display: flex;
+    height: 2.9em;
+    width: 8em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(197, 75%, 46%));
+}
+.invite a{
+    color: white;
+}
