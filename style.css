@@ -13,6 +13,7 @@ html {
   /* overflow: hidden; */
 }
 
+/* header */
 header {
   margin: 0;
   padding: 1rem;
@@ -82,4 +83,48 @@ nav {
 .btn-primary {
   color: #fff;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+/* slider */
+
+#slider {
+  margin: 0;
+  background: url(/images/bg-intro-desktop.svg) no-repeat;
+  background-position: bottom -9rem right -21rem;
+}
+
+#slider .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-content {
+  width: 30vw;
+  padding-left: 10em;
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+.slider-title {
+  font-size: 2.1rem;
+  color: hsl(233, 26%, 24%);
+}
+
+.slider-description {
+  font-size: 0.8rem;
+  overflow-wrap: break-word;
+  color: hsl(233, 8%, 62%);
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  background: url(/images/image-mockups.png) no-repeat;
+  background-position: top -7rem right -4rem;
+  z-index: 1;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: hsl(233, 26%, 24%);
 }
