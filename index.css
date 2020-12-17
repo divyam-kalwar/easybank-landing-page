@@ -1,0 +1,468 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    flex-direction: column;
+    Font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+html{
+    color: gray;
+}
+header{
+    display: flex;
+    height: 8em;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+header nav{
+    display: flex;
+    width: 25em;
+    justify-content: space-between;
+    border: 1px red;
+    margin: auto 20px;
+}
+#logo{
+    height: 28px;
+    width: 200px;
+    padding: 5px;
+}
+.invite_btn{
+    display: flex;
+    height: 45px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto 10px;
+}
+input[type=checkbox]{
+    display: none;
+}
+li{
+    list-style: none;
+    float: left;
+}
+li a{
+    color: gray;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    height: 70%;
+    border-radius: 20px;
+}
+
+.container{
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.background{
+    display: flex;
+    flex: 1;
+    z-index: 2;
+    justify-content: space-between;
+    background-image: url('./images/image-mockups.png'), url('./images/bg-intro-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 110% 30%,180% 90%;
+    background-size: 40%,70%;
+}
+
+.easybank-articles{
+    display: flex;
+    flex-direction: column;
+}
+.articles{
+    
+    display: flex;
+}
+.article-container{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+
+.article-container img{
+    width: 100%;
+    height: 40%;
+}
+.article{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding: 10px;
+}
+.article p, h4{
+    padding: 8px;
+    margin: 0px;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.article p{
+    margin-top: 1em;
+}
+
+.article h4{
+    font-size: 1em;
+    color: black;   
+}
+
+.bg-content{
+    margin-top: 6em;
+    display: flex;
+    width: 30em;
+    flex-direction: column;
+    margin-left: 10em;
+    font-size: 0.8em;
+    height: 30em;
+}
+
+.bg-content h1{
+    font-size: 3.2em;
+}
+.bg-img{
+    width: 19em;
+    height: 20em;
+    
+}
+
+.easybank-services{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+    justify-content: space-between;
+}
+.service-container{
+    width: 80vw;
+    margin: auto;
+}
+h1{
+    color: black;
+}
+.service-container  h2{
+   font-size: 2.4em;
+   font-weight: 300;
+}
+
+.why-easybank{
+    width: 40em;
+    font-weight: 400;
+    color: black;
+}
+
+.easybank-services > div{
+    font-size: 0.7em;
+    flex: 1;
+}
+
+.services{
+    display: flex;
+    margin: 60px auto;
+}
+
+footer{
+    box-sizing: border-box;
+    display: flex;
+    background-color: hsl(233, 26%, 24%);;
+    min-height: 8em;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom-logo{
+    width: 10em;
+    background: url('./images/logo-white.svg') no-repeat;
+}
+.bttom-social-icons{
+    margin-top: 2em;
+}
+.bttom-social-icons > span{
+    margin-left: 0.4em;
+}
+.bank-logo > img{
+    width: 70px;
+    height: 30px;
+    color: aliceblue;
+    fill: white;
+}
+
+.bottom-nav > .nav-1, .nav-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.nav-1 > a, .nav-2 > a{
+    margin: 10px;
+    margin-left: 20px;
+    color: gray;
+    font-size: 15px;
+}
+
+.bottom-invite-btn label{
+    color: gray;
+    font-size: 15px;
+}
+
+.bottom-invite-btn{
+    height: 6em;
+}
+
+.bottom-invite-btn .invite_btn{
+    margin-bottom: 2em;
+}
+
+#hamburger, #close{
+    display: none;
+}
+
+#disp{
+    background-color: white;
+    display: none;
+    width: 16em;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 6em;
+    z-index: 3;  
+}
+#disp li{
+    margin: 15px;
+}
+#disp.container{
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+
+@media (max-width:659px){
+    .background{
+        flex-direction: column;
+        background-position: 50% -8em,40% -12em;
+        background-size: 80%,150%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg-content{
+        
+        width: 30em;
+        margin: auto;
+        margin-top: 34em;
+    }
+    .services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .services > div, .articles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .article{
+        width: 80%;
+    }
+    header .invite_btn{
+        display: none;
+        justify-content: space-around;
+    }    
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    body > footer > div.bottom-invite-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-logo{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:475px){
+    body{
+        overflow-x: hidden;
+    }
+    header nav{
+        display: none;
+
+    }
+    #hamburger{
+        display: block;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .background{
+        flex-direction: column;
+        background-position: 50% -8em,40% -12em;
+        background-size: 80%,150%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg-content{
+        display: flex;
+        width: 24em;
+        margin: 0px;
+        /* height: 40em; */
+        margin-top: 26em;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+    }
+    .bg-content .invite_btn{
+        margin-top: 20px;
+    }
+
+    .easybank-services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-container{
+        display: flex;
+        flex-direction: column;
+
+        width: 24em;
+        margin: 0px;
+        /* height: 40em; */
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+    }
+    .why-easybank{
+        width: 16em;
+        font-size: 1.2em;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .articles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article{
+        width: 80%;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bottom-logo{
+        margin-top: 10px;
+    }
+
+    .bottom-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .bottom-nav a{
+        color: white;
+    }
+    .bottom-nav .nav-1, .nav-2, .bottom-invite-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .bottom-invite-btn{
+        margin: 20px auto;
+    }
+
+}
+
+@media (min-width:660px) and (max-width:968px){
+    #hamburger, #close{
+        display: none;
+    }
+    .background{
+        flex-direction: column;
+        background-position: 50% -8em,40% -12em;
+        background-size: 80%,150%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg-content{
+        
+        width: 30em;
+        margin: auto;
+        margin-top: 60em;
+    }
+    .services, .articles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .services > div, .article{
+        width: 40%;
+        margin: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .article{
+        margin: 0.5em;
+    }
+
+}
