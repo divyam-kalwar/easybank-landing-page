@@ -326,6 +326,14 @@ footer .container {
 }
 
 @media all and (min-width: 1024px) and (max-width: 1366px) {
+  #slider {
+    margin: 0;
+    background: url(/images/bg-intro-desktop.svg) no-repeat;
+    background-position: bottom -5rem right -35rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .nav-links {
     width: 50vw;
   }
@@ -338,9 +346,11 @@ footer .container {
     color: hsl(233, 8%, 62%);
     font-size: 0.9rem;
   }
+
   .invite-now {
     display: none;
   }
+
   #slider {
     margin: 0;
     background: url(/images/bg-intro-desktop.svg) no-repeat;
@@ -352,25 +362,19 @@ footer .container {
     justify-content: space-between;
   }
 
-  .slider-title {
-    font-size: 1.5rem;
-  }
   .slider-content {
     padding-left: 2em;
     padding-top: 1em;
-    padding-bottom: 7em;
   }
 
   .slider-image {
-    width: 100%;
-    height: auto;
     background: url(/images/image-mockups.png) no-repeat;
     background-position: top -10rem right -5rem;
     background-size: 600px;
-    z-index: 1;
   }
 
   #why-choose {
+    text-align: center;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 4em;
@@ -430,214 +434,6 @@ footer .container {
     border-top-right-radius: 0.5rem;
   }
 
-  #why-choose {
-    text-align: center;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 4em;
-    padding-bottom: 3rem;
-    background: url(/images/image-mockups.png) no-repeat #f0f0f0;
-    background-position: right -92.2px top -650px;
-    background-size: 604px;
-  }
-
-  #why-choose .section-heading {
-    text-align: center;
-  }
-
-  footer {
-    margin: 0;
-    background: hsl(233, 26%, 24%);
-    padding-top: 3rem;
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 3rem;
-  }
-
-  footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .footer-left {
-    display: flex;
-  }
-
-  .footer-logos {
-    width: 20vw;
-  }
-
-  .social-media-links {
-    margin-top: 1rem;
-  }
-
-  .social-media-links a {
-    margin-right: 0.6rem;
-  }
-
-  .left-footer-links {
-    margin-right: 10rem;
-    display: flex;
-    height: 10vh;
-    flex-direction: column;
-  }
-
-  .right-footer-links {
-    margin-right: 10rem;
-    display: flex;
-    height: 10vh;
-    flex-direction: column;
-  }
-
-  .left-footer-links a,
-  .right-footer-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
-  .footer-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .copyright p {
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  .nav-links {
-    width: 50vw;
-  }
-  .nav-links ul li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    list-style: none;
-    color: hsl(233, 8%, 62%);
-    font-size: 0.9rem;
-  }
-  .invite-now {
-    display: none;
-  }
-  #slider {
-    margin: 0;
-    background: url(/images/bg-intro-desktop.svg) no-repeat;
-    background-position: bottom -5rem right -35rem;
-  }
-
-  #slider .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .slider-title {
-    font-size: 1.5rem;
-  }
-  .slider-content {
-    padding-left: 2em;
-    padding-top: 1em;
-    padding-bottom: 7em;
-  }
-
-  .slider-image {
-    width: 100%;
-    height: auto;
-    background: url(/images/image-mockups.png) no-repeat;
-    background-position: top -10rem right -5rem;
-    background-size: 600px;
-    z-index: 1;
-  }
-
-  #why-choose {
-    text-align: center;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 4em;
-    padding-bottom: 3rem;
-    background: url(/images/image-mockups.png) no-repeat #f0f0f0;
-    background-position: right -92.2px top -650px;
-    background-size: 604px;
-  }
-
-  #why-choose .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .boxes {
-    display: flex;
-    margin-top: 1rem;
-    justify-content: space-evenly;
-  }
-
-  #latest-articles {
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 4rem;
-    background-color: #f8f8f8;
-  }
-
-  #latest-articles .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -1.2rem;
-  }
-
-  .card {
-    width: 30vw;
-    background-color: #fff;
-    margin-right: 1rem;
-    border-radius: 0.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .card-body {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.3rem;
-  }
-
-  .card-header img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-
-  #why-choose .section-heading {
-    text-align: center;
-  }
-
-  footer {
-    margin: 0;
-    background: hsl(233, 26%, 24%);
-    padding-top: 3rem;
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 3rem;
-  }
-
   footer .container {
     display: flex;
     align-items: center;
@@ -658,46 +454,6 @@ footer .container {
 
   .social-media-links a {
     margin-right: 0.6rem;
-  }
-
-  .left-footer-links {
-    margin-right: 10rem;
-    display: flex;
-    height: 10vh;
-    flex-direction: column;
-  }
-
-  .right-footer-links {
-    margin-right: 10rem;
-    display: flex;
-    height: 10vh;
-    flex-direction: column;
-  }
-
-  .left-footer-links a,
-  .right-footer-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
-  .footer-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .copyright p {
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
   }
 }
 
@@ -723,12 +479,6 @@ footer .container {
     background-size: 100%;
   }
 
-  .slider-image {
-    width: 100%;
-    height: auto;
-    background: none;
-  }
-
   #slider .container {
     display: flex;
     flex-wrap: wrap;
@@ -736,9 +486,6 @@ footer .container {
     justify-content: center;
   }
 
-  .slider-title {
-    font-size: 1.5rem;
-  }
   .slider-content {
     text-align: center;
     margin-top: 100%;
@@ -749,17 +496,7 @@ footer .container {
 
   #why-choose {
     background: #f0f0f0;
-    padding-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  #why-choose .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    padding: 3rem;
   }
 
   .boxes {
@@ -771,7 +508,6 @@ footer .container {
     padding-top: 2rem;
     padding-left: 0rem;
     padding-right: 0rem;
-    background-color: #f8f8f8;
   }
 
   #latest-articles .container {
@@ -788,31 +524,17 @@ footer .container {
 
   .card {
     width: 50%;
-    background-color: #fff;
-    margin-right: 1rem;
-    border-radius: 0.5rem;
+    margin-left: 0.8rem;
     margin-top: 1.5rem;
   }
 
   .card-header img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
   }
 
   #why-choose .section-heading {
     text-align: center;
-  }
-
-  footer {
-    margin: 0;
-    background: hsl(233, 26%, 24%);
-    width: 100%;
-    padding-top: 1.5rem;
-    padding-left: 0rem;
-    padding-right: 1rem;
-    padding-bottom: 0rem;
   }
 
   footer .container {
@@ -834,14 +556,6 @@ footer .container {
     text-align: center;
   }
 
-  .social-media-links {
-    margin-top: 1rem;
-  }
-
-  .social-media-links a {
-    margin-right: 0.6rem;
-  }
-
   .left-footer-links {
     margin-right: 0rem;
     margin-top: 1rem;
@@ -858,13 +572,6 @@ footer .container {
     flex-direction: column;
   }
 
-  .left-footer-links a,
-  .right-footer-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
   .footer-right {
     margin-top: 2rem;
     display: flex;
@@ -873,19 +580,6 @@ footer .container {
     justify-content: flex-end;
     width: 100%;
     text-align: center;
-  }
-  .copyright p {
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(0, 0%, 100%);
   }
 }
 
@@ -903,7 +597,6 @@ footer .container {
   }
 
   #slider {
-    margin: 0;
     background-image: url(/images/image-mockups.png),
       url(/images/bg-intro-mobile.svg);
     background-repeat: no-repeat, no-repeat;
@@ -918,9 +611,6 @@ footer .container {
     justify-content: center;
   }
 
-  .slider-title {
-    font-size: 1.5rem;
-  }
   .slider-content {
     text-align: center;
     margin-top: 100%;
@@ -931,17 +621,7 @@ footer .container {
 
   #why-choose {
     background: #f0f0f0;
-    padding-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  #why-choose .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    padding: 3rem;
   }
 
   .boxes {
@@ -950,10 +630,8 @@ footer .container {
   }
 
   #latest-articles {
-    padding-top: 2rem;
     padding-left: 0rem;
     padding-right: 0rem;
-    background-color: #f8f8f8;
   }
 
   #latest-articles .container {
@@ -965,27 +643,18 @@ footer .container {
   .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: -1.2rem;
   }
 
   .card {
     width: 70%;
-    background-color: #fff;
     margin-right: 0rem;
-    border-radius: 0.5rem;
     margin-top: 1.5rem;
   }
 
   .card-header img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-
-  #why-choose .section-heading {
-    text-align: center;
   }
 
   footer {
@@ -1041,13 +710,6 @@ footer .container {
     flex-direction: column;
   }
 
-  .left-footer-links a,
-  .right-footer-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
   .footer-right {
     margin-top: 1rem;
     display: flex;
@@ -1056,18 +718,5 @@ footer .container {
     justify-content: flex-end;
     width: 100%;
     text-align: center;
-  }
-  .copyright p {
-    color: #fff;
-    font-size: 0.8rem;
-  }
-
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(0, 0%, 100%);
   }
 }
