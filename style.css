@@ -128,3 +128,40 @@ nav {
   font-size: 1.5rem;
   color: hsl(233, 26%, 24%);
 }
+
+/* why choose section */
+
+#why-choose {
+  padding-top: 3rem;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 3rem;
+  background: url(/images/image-mockups.png) no-repeat #f0f0f0;
+  background-position: top -41rem right -4rem;
+}
+
+#why-choose .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.boxes {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.box-icon {
+  padding-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  overflow-wrap: break-word;
+  color: hsl(233, 8%, 62%);
+}
