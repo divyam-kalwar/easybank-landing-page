@@ -1,0 +1,349 @@
+#hamburger{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu{
+    display: none;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    flex-direction: column;
+    top: 50px;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bank_features{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(235, 237, 241);
+}
+.feature_container{
+    display: flex;
+    background-color: rgb(235, 237, 241);
+    width: container;
+    flex-direction: column;
+}
+
+.features{
+    display: flex;
+    margin: 5rem 3rem 5rem 2rem;
+    column-gap: 2em;
+}
+
+.whyChooseEasybank{
+    margin: 2rem 2rem 2rem 2rem;
+    height: 100px;
+    width: 600px;
+}
+
+.slogan_container{
+    min-height: 25vh    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 3rem 2rem 2rem;
+    
+}
+
+.slogan_container p{
+    width: 390px;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.latestArticle{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+
+.articles{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;    
+}
+
+.articleBox{
+    min-height: 15em;
+    display: flex;
+    height: 70px;
+    width: 210px;
+    flex-direction: column;
+}
+.articleBox img{
+    width: 100%;
+    height: 40%;
+}
+.articleBox h2{
+    margin:0px;
+    font-size: 1em;
+}
+.heading{
+    margin: 0rem 0rem 0rem 2rem;
+    width: 100%;
+    height: 30;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 5em;
+}
+
+.sections{
+    background-image: url(./images/image-mockups.png), url(./images/bg-intro-desktop.svg) ;
+    background-size: 50% , 70%;
+    background-repeat: no-repeat , no-repeat  ;
+    background-position:600px, 365px;
+    display: flex;
+}
+
+.button_request{
+    background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 20px;
+    height: 3em;
+    width: 9em;
+}
+
+#section1{
+   
+
+    height: 100;
+    width: 100;
+}
+
+.slogan_container{
+    height: 200;
+    width: 200;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    height: 7em;
+}
+
+.container{
+    display: flex;
+    min-height: 2em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(29, 29, 77);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15em;
+}
+
+.footerNavbar{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footerNavbar a{
+  color: white;
+  text-decoration: none;
+}
+
+.buttonAndRightsContainer p{
+    color: white;
+}
+
+.buttonAndRightsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.socialMedias{
+    padding: 1em;
+}
+
+@media only screen and (min-width:961px){
+    .bank_features{
+        display: flex;
+    }
+}
+.logoAndSocialMedias{
+    display: flex;
+    width: 15em;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 6em;
+}
+
+.navbarContainer{
+    display: flex;
+    column-gap: 2em;
+}
+
+@media only screen and (max-width: 650px) {
+   bank_features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 8em;
+    }
+    .container, .container  ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slogan_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .latestArticle{
+        display: flex;
+        flex-direction: column;
+        /* height: 900px; */
+        flex-grow: inherit;
+        height: 115em;
+    }    
+
+    .features,.latestArticle, .articles,footer{
+        display: flex;
+        flex-direction: column; 
+        width: 25em;
+        
+    }
+
+    .articles{
+        display: flex;
+        align-items: center;
+        width: 25em;
+        column-gap: 0px;
+    }
+
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .bank_features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whyChooseEasybank{
+        display: flex;
+        flex-direction: column;
+        min-width: 50em;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 35em;
+        width: 25em;
+    }
+
+
+    .articleBox{
+        display: flex;
+        height: 60%;
+        width: 60%;
+        flex-direction: column;
+    }
+    
+    .buttonAndRightsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .feature img{
+        display: flex;
+        align-self: center;
+        height: 70px;
+        width: 70px;
+    }
+
+    #hamburger{
+        display: flex;
+        
+    }
+    
+    
+    header div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header nav,button{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+        width: 100%;
+        justify-content: space-around;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .sections{
+        background-size: 80% , 100%;
+        background-repeat: no-repeat , no-repeat  ;
+        background-position:5px -1px, 40px -40px;
+        display: flex;
+    }
+
+    .slogan_container{
+        margin-top: 35em;
+    }
+}
+ 
+
+
+
