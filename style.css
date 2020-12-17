@@ -227,3 +227,76 @@ nav {
   overflow-wrap: break-word;
   color: hsl(233, 8%, 62%);
 }
+
+/* footer section */
+
+footer {
+  margin: 0;
+  background: hsl(233, 26%, 24%);
+  padding-top: 3rem;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 3rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.footer-logos {
+  width: 20vw;
+}
+
+.social-media-links {
+  margin-top: 1rem;
+}
+
+.social-media-links a {
+  margin-right: 0.6rem;
+}
+
+.left-footer-links {
+  margin-right: 10rem;
+  display: flex;
+  height: 10vh;
+  flex-direction: column;
+}
+
+.right-footer-links {
+  margin-right: 10rem;
+  display: flex;
+  height: 10vh;
+  flex-direction: column;
+}
+
+.left-footer-links a,
+.right-footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.copyright p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
