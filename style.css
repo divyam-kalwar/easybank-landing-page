@@ -300,3 +300,27 @@ footer .container {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* hamburger */
+.hamburger {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.mobile-nav {
+  background-color: #fff;
+  display: none;
+  width: 16em;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 4rem;
+  z-index: 3;
+  line-height: 2rem;
+}
+
+.mobile-nav ul li {
+  margin: 15px;
+}
