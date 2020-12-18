@@ -38,6 +38,7 @@ header {
     /* border: 1px red dashed; */
     font-size: 0.8rem;
     color: hsl(233, 8%, 62%);
+    box-shadow: none;
 }
 
 .header-nav {
@@ -45,6 +46,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header-nav a {
@@ -90,10 +92,42 @@ header {
     margin-right: 20px;
 }
 
+/* Popup properies */
+.popup-menu {
+    display: none;
+    width: 360px;
+    margin: auto;
+    height: 300px;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 13vh;
+    left: 5vw;
+    z-index: 3;
+    background: #FFF;
+    /* box-shadow: 10px 10px 10px 100px black; */
+    box-shadow: 0 50px 500px 0px black;
+    clip: rect(-20px 1000px 1000px -100px);
+}
+
+.popup-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-menu ul li {
+    list-style: none;
+    /* border: 1px red dashed; */
+    margin-top: 1.9rem;
+    font-size: 1.2rem;
+    font-family: 'Public Sans','Times New Roman', Times, serif;
+    color: hsl(233, 26%, 24%);
+}
+
 /* Main */
 .request-invite {
-    height: 630px;
-    /* border: 1px orange dashed; */
+    height: 500px;
     background: hsl(0, 0%, 98%);
     display: flex;
     justify-content: space-between;
@@ -102,6 +136,7 @@ header {
 }
 
 .invite-main {
+    height: 100%;
     width: 40%;
     /* border: 1px red dashed; */
     display: flex;
@@ -441,12 +476,17 @@ footer {
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
 }
+@media (min-width: 400px) {
+    .popup-menu {
+        display: none;
+    }
+}
 
 @media (max-width: 400px) {
     
     body {
         max-width: 400px;
-        min-width: 350px;
+        min-width: 370px;
     }
     section {
         border: 1px red dashed;
@@ -475,12 +515,13 @@ footer {
     }
 
     .invite-main {
-        height: 50%;
+        height: 40%;
         width: 90%;
         order: 2;
         border: 1px red dashed;
         align-items: center;
-        align-content: center;
+        justify-content: flex-start;
+        /* align-content: center; */
         text-align: center;
         margin: auto;
         padding-left: 0;
@@ -490,6 +531,7 @@ footer {
         border: 1px red dashed;
         font-size: 2.5rem;
         text-align: center;
+    
     }
     .invite-images {
         height: 40%;
