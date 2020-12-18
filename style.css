@@ -378,10 +378,9 @@ footer {
     justify-content: space-between;
 }
 
-.div1 img:hover {
-    background: green;
+.social-links svg:hover path {
+    fill: hsl(136, 28%, 42%);
 }
-
 .footer-links {
     border: 1px red dashed;
     color: #FFF;
@@ -399,7 +398,7 @@ footer {
 }
 
 .footer-links li:hover {
-    color: hsl(136, 65%, 51%);
+    color: hsl(136, 28%, 42%);
 }
 
 .footer-link ul{
