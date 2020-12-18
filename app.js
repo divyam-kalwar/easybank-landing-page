@@ -2,12 +2,15 @@ const hamburgerElement = document.querySelector('.hamburger');
 const mockupImageElement = document.querySelector('.img-mockups');
 const popupMenuElement = document.querySelector('.popup-menu');
 
-
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 400) {
+        popupMenuElement.style.display = "none";
+    }
+});
 
 hamburgerElement.addEventListener('click', () => {
-    console.log("Hamburger clicked");
+    console.log(window.innerWidth);
     console.log(getComputedStyle(mockupImageElement).display);
-    console.log(popupMenuElement.style.display);
 
     if(getComputedStyle(mockupImageElement).display === "none") {
         mockupImageElement.style.display = "block";
