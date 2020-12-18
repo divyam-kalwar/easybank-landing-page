@@ -13,6 +13,9 @@ body {
     max-width: 1440px;
 }
 
+h1, p {
+    font-family: 'Public Sans','Times New Roman', Times, serif;
+}
 .container {
     width: 80%;
     margin: auto;
@@ -181,6 +184,7 @@ header {
     height: 660px;
     display: flex;
     flex-direction: column;
+    font-family: 'Public Sans','Times New Roman', Times, serif;
 }
 
 .why-choose h1 {
@@ -192,7 +196,7 @@ header {
     color: hsl(233, 26%, 24%);
 }
 
-.why-choose > p {
+.why-choose p {
     font-size: 1.2rem;
     line-height: 1.3;
     font-family: 'Public Sans','Times New Roman', Times, serif;
@@ -214,15 +218,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
+    height: 80%;
 }
 
 .info-card p {
     width: 100%;
-    font-family: 'Public Sans','Times New Roman', Times, serif;
-    color: hsl(233, 8%, 62%);
     font-size: 1rem;
     line-height: 1.3;
+    font-family: 'Public Sans','Times New Roman', Times, serif;
 }
 
 .info-card-title {
@@ -234,42 +237,29 @@ header {
     margin-top: 2rem;
 }
 
-.banking-card .img-info-card {
-    background-image: url('images/icon-online.svg');
-    width: 30%;
-    height: 30%;
-    background-repeat: no-repeat;
-}
-
-.budget-card .img-info-card {
-    background-image: url('images/icon-budgeting.svg');
-    width: 30%;
-    height: 30%;
-    background-repeat: no-repeat;
-}
-
-.onboarding-card .img-info-card {
-    background-image: url('images/icon-onboarding.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-position: cover;
-    width: 30%;
-    height: 30%;
-    background-repeat: no-repeat;
-}
-
-.api-card .img-info-card {
-    background-image: url('images/icon-api.svg');
-    width: 30%;
-    height: 30%;
-    background-repeat: no-repeat;
-}
-
 .img-info-card {
     width: 30%;
     height: 30%;
     background-repeat: no-repeat;
+    background-position: center center;
 }
+
+.banking-card .img-info-card {
+    background-image: url('images/icon-online.svg');
+}
+
+.budget-card .img-info-card {
+    background-image: url('images/icon-budgeting.svg');
+}
+
+.onboarding-card .img-info-card {
+    background-image: url('images/icon-onboarding.svg');
+}
+
+.api-card .img-info-card {
+    background-image: url('images/icon-api.svg');
+}
+
 
 /* Section 3 */
 .articles {
