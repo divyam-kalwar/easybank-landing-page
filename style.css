@@ -262,7 +262,7 @@ header {
 
 .article-cards {
     display: flex;
-    height: 60%;
+    height: 63%;
     justify-content: space-between;
 }
 
@@ -270,11 +270,11 @@ header {
     border: 1px red dashed;
     width: 23%;
     /* margin-right: 2%; */
-    border-radius: 5px;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    align-contents: center;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .article-card-1 .img-article-card {
@@ -285,6 +285,7 @@ header {
     background-position: center center;
     background-position: cover;
     background-repeat: no-repeat;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .article-card-2 .img-article-card {
@@ -295,6 +296,7 @@ header {
     background-position: center center;
     background-position: cover;
     background-repeat: no-repeat;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .article-card-3 .img-article-card {
@@ -305,6 +307,7 @@ header {
     background-position: center center;
     background-position: cover;
     background-repeat: no-repeat;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .article-card-4 .img-article-card {
@@ -315,24 +318,32 @@ header {
     background-position: center center;
     background-position: cover;
     background-repeat: no-repeat;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .article-card .card-by {
     font-size: 0.7rem;
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
+    margin-left: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .article-card .card-header {
     font-size: 1rem;
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 26%, 24%);
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-
+.article-card .card-header:hover {
+    color: hsl(136, 65%, 51%);
+}
 .article-card .card-info {
     font-size: 0.8rem;
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
 }
@@ -377,7 +388,7 @@ footer {
 }
 
 .footer-links li:hover {
-    color: green;
+    color: hsl(136, 65%, 51%);
 }
 
 .footer-link ul{
@@ -391,7 +402,6 @@ footer {
 .footer-button {
     border: 1px red dashed;
     flex: 2;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
