@@ -114,6 +114,10 @@ header {
     color: hsl(233, 26%, 24%);
 }
 
+.popup-menu ul li:hover {
+    color: hsl(136, 65%, 51%);
+}
+
 .header-nav a {
     display: none;
 }
