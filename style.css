@@ -9,6 +9,8 @@
 
 body {
     font-size: 18px;
+    width: 1350px;
+    max-width: 1440px;
 }
 
 .container {
@@ -45,11 +47,10 @@ header {
     align-items: center;
 }
 
-/* .header-nav img {
-    height:1rem;
-    width: 150px;
-    object-fit: cover;
-} */
+.header-nav a {
+    display: none;
+}
+
 .website-logo {
     height: 1.5rem;
     width: 150px;
@@ -59,18 +60,30 @@ header {
     background-position: center center;
 }
 .header-nav nav {
+    width: 22rem;
+    /* border: 1px red dashed; */
+    height: 100%;
+    margin-left: 5rem;
 }
 
 .header-nav nav ul{
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     list-style: none;
-    border: 1px red orange;
+    /* border: 1px red dashed; */
 }
 
 .header-nav nav ul li {
-    border: 1px red dashed;
-    margin-right: 25px;
+    height: 60%;
+    /* margin-right: 25px; */
+    /* border: 1px blue dashed; */
+}
+
+.header-nav nav ul li:hover {
+    color: hsl(233, 26%, 24%);
+    border-bottom: 3px hsl(136, 65%, 51%) solid;
 }
 
 .header-nav button {
@@ -80,7 +93,7 @@ header {
 /* Main */
 .request-invite {
     height: 630px;
-    border: 1px orange dashed;
+    /* border: 1px orange dashed; */
     background: hsl(0, 0%, 98%);
     display: flex;
     justify-content: space-between;
@@ -90,7 +103,7 @@ header {
 
 .invite-main {
     width: 40%;
-    border: 1px red dashed;
+    /* border: 1px red dashed; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +130,7 @@ header {
 
 .invite-images {
     width: 60%;
-    border: 1px orange dashed;
+    /* border: 1px orange dashed; */
     position: relative;
 }
 
@@ -127,7 +140,7 @@ header {
     background-image: url('images/bg-intro-desktop.svg');
     /* translate: 100px 100px; */
     /* background-size: cover; */
-    background-position: -5% 60%;
+    background-position: 0 60%;
     background-repeat: no-repeat;
     /* position: absolute; */
     /* top: -15rem; */
@@ -135,7 +148,7 @@ header {
 }
 
 .img-mockups {
-    border: 1px red dashed;
+    /* border: 1px red dashed; */
     width: 100%;
     height: 130%;
     background-image: url('images/image-mockups.png');
@@ -150,9 +163,12 @@ header {
 /* Section 2 */
 .why-choose {
     height: 650px;
-    border: 1px purple dashed;
-    background-color: hsl(220, 16%, 96%);
+    /* border: 1px purple dashed; */
+    /* background-color: hsl(220, 16%, 96%); */
+    /* background-color: red; */
     /* margin-top: 10%; */
+    display: flex;
+    flex-direction: column;
 }
 
 .why-choose h1 {
@@ -175,7 +191,7 @@ header {
 }
 
 .info-cards {
-    border: 1px purple dashed;
+    /* border: 1px purple dashed; */
     display: flex;
     align-items: flex-start;
     height: 60%;
@@ -184,6 +200,7 @@ header {
 .info-card {
     width: 24%;
     margin-right: 1%;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,6 +221,7 @@ header {
     font-weight: 300;
     color: hsl(233, 26%, 24%);
     margin-bottom: 10%;
+    margin-top: 2rem;
 }
 
 .banking-card .img-info-card {
@@ -246,7 +264,7 @@ header {
 /* Section 3 */
 .articles {
     height: 650px;
-    border: 1px green dashed; 
+    /* border: 1px green dashed;  */
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -366,7 +384,7 @@ footer {
 .div1 {
 
     width: 10rem;
-    border: 1px red dashed;
+    /* border: 1px red dashed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -379,10 +397,10 @@ footer {
 }
 
 .social-links svg:hover path {
-    fill: hsl(136, 28%, 42%);
+    fill: hsl(136, 65%, 51%);
 }
 .footer-links {
-    border: 1px red dashed;
+    /* border: 1px red dashed; */
     color: #FFF;
     display: flex;
     justify-content: space-around;
@@ -398,7 +416,7 @@ footer {
 }
 
 .footer-links li:hover {
-    color: hsl(136, 28%, 42%);
+    color: hsl(136, 65%, 51%);
 }
 
 .footer-link ul{
@@ -406,11 +424,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px orange dashed;
+    /* border: 1px orange dashed; */
 }
 
 .footer-button {
-    border: 1px red dashed;
+    /* border: 1px red dashed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -424,3 +442,103 @@ footer {
     color: hsl(233, 8%, 62%);
 }
 
+@media (max-width: 400px) {
+    
+    body {
+        max-width: 400px;
+        min-width: 350px;
+    }
+    section {
+        border: 1px red dashed;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .header-nav {
+        border: 1px red dashed;
+    }
+    .header-nav a {
+        display: block;
+    }
+    .header-nav nav, .header-nav button {
+        display: none;
+    }
+
+    .header-nav .website-logo {
+        width: 60%;
+    }
+
+    .request-invite {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .invite-main {
+        height: 50%;
+        width: 90%;
+        order: 2;
+        border: 1px red dashed;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        font-size: 0rem;
+        margin: auto;
+    }
+    .invite-main h1 {
+        /* width: 100%; */
+        font-size: 2.5rem;
+    }
+    .invite-images {
+        height: 50%;
+        width: 100%;
+        order: 1;
+        border: 1px red dashed;
+    }
+
+    .img-bg-intro {
+        /* background-size: cover; */
+        background-position: 30% 90%;
+        
+    }
+    .why-choose {
+        height: 1500px;
+        align-items: center;
+    }
+
+    .why-choose h1 {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .why-choose > p {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info-cards {
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        border: 1px red dashed;
+        margin-bottom: 5rem;
+    }
+    
+    .info-card {
+        width: 100%;
+        border: 1px orange dashed;
+        align-items: center;
+    }
+    .img-info-card {
+        width: 20%;
+        height: 20%;
+        border: 1px red dashed;
+    }
+    .info-card > p {
+        text-align: center;
+    }
+    .info-card-title {
+        text-align: center;
+    }
+
+}
