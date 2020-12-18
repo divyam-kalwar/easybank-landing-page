@@ -360,12 +360,11 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    height: 50%;
-    translate: 0 50%;
+    height: 45%;
+    translate: 0 55%;
 }
 
 .logo-links {
-
     width: 10rem;
     display: flex;
     flex-direction: column;
@@ -382,12 +381,10 @@ footer {
     fill: hsl(136, 65%, 51%);
 }
 .footer-links {
-    color: #FFF;
     display: flex;
     justify-content: space-around;
     width: 20rem;
-    font-size: 1rem;
-    color: #FFF;
+    font-size: 0.9rem;
     font-family: 'Public Sans','Times New Roman', Times, serif;
     margin-right: 15rem;
 }
@@ -416,7 +413,6 @@ footer {
 
 .footer-button p {
     font-size: 0.9rem;
-    color: #FFF;
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
 }
@@ -427,12 +423,15 @@ footer {
         max-width: 400px;
         min-width: 370px;
     }
+    
     .container {
         width: 90%;
     }
+
     .header-nav a {
         display: block;
     }
+
     .header-nav nav, .header-nav button {
         display: none;
     }
@@ -456,6 +455,7 @@ footer {
         margin: auto;
         padding-left: 0;
     }
+    
     .invite-main h1 {
         width: 100%;
         font-size: 2.5rem;
