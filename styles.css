@@ -449,7 +449,7 @@ justify-content: space-evenly;
 }
 
 
-@media all and (max-width:550px){
+@media all and (max-width:570px){
    .image img {
       position: absolute;
       width: 90vw;
@@ -468,6 +468,10 @@ justify-content: space-evenly;
 
     .text {
         width:70vw
+    }
+
+    .text h1 {
+      font-size:2em;
     }
 
     .benifits p{
