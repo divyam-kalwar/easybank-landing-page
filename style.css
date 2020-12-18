@@ -34,8 +34,7 @@ body {
 
 header {
     width: 100%;
-    height: 10vh; /* 9.5*/
-    /* border: 1px red dashed; */
+    height: 10vh; 
     font-size: 0.8rem;
     color: hsl(233, 8%, 62%);
     box-shadow: none;
@@ -56,14 +55,12 @@ header {
 .website-logo {
     height: 1.5rem;
     width: 150px;
-    /* border: 1px red dashed; */
     background-image: url('images/logo.svg');
     background-repeat: no-repeat;
     background-position: center center;
 }
 .header-nav nav {
     width: 22rem;
-    /* border: 1px red dashed; */
     height: 100%;
     margin-left: 5rem;
 }
@@ -74,13 +71,10 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     list-style: none;
-    /* border: 1px red dashed; */
 }
 
 .header-nav nav ul li {
     height: 60%;
-    /* margin-right: 25px; */
-    /* border: 1px blue dashed; */
 }
 
 .header-nav nav ul li:hover {
@@ -104,7 +98,6 @@ header {
     left: 5vw;
     z-index: 3;
     background: #FFF;
-    /* box-shadow: 10px 10px 10px 100px black; */
     box-shadow: 0 50px 500px 0px black;
     clip: rect(-20px 1000px 1000px -100px);
 }
@@ -118,7 +111,6 @@ header {
 
 .popup-menu ul li {
     list-style: none;
-    /* border: 1px red dashed; */
     margin-top: 1.9rem;
     font-size: 1.2rem;
     font-family: 'Public Sans','Times New Roman', Times, serif;
@@ -138,7 +130,6 @@ header {
 .invite-main {
     height: 100%;
     width: 40%;
-    /* border: 1px red dashed; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +156,6 @@ header {
 
 .invite-images {
     width: 60%;
-    /* border: 1px orange dashed; */
     position: relative;
 }
 
@@ -173,22 +163,15 @@ header {
     width:100%;
     height: 100%;
     background-image: url('images/bg-intro-desktop.svg');
-    /* translate: 100px 100px; */
-    /* background-size: cover; */
     background-position: 0 60%;
     background-repeat: no-repeat;
-    /* position: absolute; */
-    /* top: -15rem; */
-    /* left: -7rem; */
 }
 
 .img-mockups {
-    /* border: 1px red dashed; */
     width: 100%;
     height: 130%;
     background-image: url('images/image-mockups.png');
     background-position: 500% bottom;
-    /* background-size: contain; */
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -198,16 +181,12 @@ header {
 /* Section 2 */
 .why-choose {
     height: 650px;
-    /* border: 1px purple dashed; */
-    /* background-color: hsl(220, 16%, 96%); */
-    /* background-color: red; */
-    /* margin-top: 10%; */
     display: flex;
     flex-direction: column;
 }
 
 .why-choose h1 {
-    border: 1px purple dashed;
+    /* border: 1px purple dashed; */
     font-size: 2.5rem;
     font-weight: 300;
     font-family: 'Public Sans','Times New Roman', Times, serif;
@@ -217,7 +196,7 @@ header {
 }
 
 .why-choose > p {
-    border: 1px purple dashed;
+    /* border: 1px purple dashed; */
     font-size: 1rem;
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
@@ -226,7 +205,6 @@ header {
 }
 
 .info-cards {
-    /* border: 1px purple dashed; */
     display: flex;
     align-items: flex-start;
     height: 60%;
@@ -239,7 +217,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: red; */
     height: 70%;
 }
 
@@ -299,12 +276,10 @@ header {
 /* Section 3 */
 .articles {
     height: 650px;
-    /* border: 1px green dashed;  */
     background-color: hsl(0, 0%, 98%);
 }
 
 .articles  h1 {
-    /* border: 1px purple dashed; */
     font-size: 2.5rem;
     font-weight: 300;
     font-family: 'Public Sans','Times New Roman', Times, serif;
@@ -320,9 +295,7 @@ header {
 }
 
 .article-card {
-    border: 1px red dashed;
     width: 23%;
-    /* margin-right: 2%; */
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -378,7 +351,6 @@ header {
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
     margin-left: 1rem;
-    /* margin-top: 1rem; */
 }
 
 .article-card .card-header {
@@ -403,13 +375,11 @@ header {
 /* Footer */
 footer {
     height: 200px;
-    border: 1px yellow dashed;
     background-color: hsl(233, 26%, 24%);
     color: #FFF;
 }
 
 .footer-container {
-    border: 1px orange dashed;
     display: flex;
     justify-content: space-between;
     height: 50%;
@@ -419,7 +389,6 @@ footer {
 .div1 {
 
     width: 10rem;
-    /* border: 1px red dashed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -435,7 +404,6 @@ footer {
     fill: hsl(136, 65%, 51%);
 }
 .footer-links {
-    /* border: 1px red dashed; */
     color: #FFF;
     display: flex;
     justify-content: space-around;
@@ -459,11 +427,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px orange dashed; */
 }
 
 .footer-button {
-    /* border: 1px red dashed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -476,11 +442,6 @@ footer {
     font-family: 'Public Sans','Times New Roman', Times, serif;
     color: hsl(233, 8%, 62%);
 }
-@media (min-width: 400px) {
-    .popup-menu {
-        display: none;
-    }
-}
 
 @media (max-width: 400px) {
     
@@ -488,15 +449,8 @@ footer {
         max-width: 400px;
         min-width: 370px;
     }
-    section {
-        border: 1px red dashed;
-    }
     .container {
         width: 90%;
-    }
-
-    .header-nav {
-        border: 1px red dashed;
     }
     .header-nav a {
         display: block;
@@ -518,17 +472,14 @@ footer {
         height: 40%;
         width: 90%;
         order: 2;
-        border: 1px red dashed;
         align-items: center;
         justify-content: flex-start;
-        /* align-content: center; */
         text-align: center;
         margin: auto;
         padding-left: 0;
     }
     .invite-main h1 {
         width: 100%;
-        border: 1px red dashed;
         font-size: 2.5rem;
         text-align: center;
     
@@ -537,7 +488,6 @@ footer {
         height: 40%;
         width: 100%;
         order: 1;
-        border: 1px red dashed;
     }
 
     .img-bg-intro {
@@ -570,19 +520,20 @@ footer {
         flex-direction: column;
         width: 100%;
         height: 80%;
-        border: 1px red dashed;
         margin-bottom: 5rem;
     }
     
     .info-card {
         width: 100%;
-        border: 1px orange dashed;
         align-items: center;
     }
-    .img-info-card {
-        width: 20%;
-        height: 20%;
-        border: 1px red dashed;
+
+    .banking-card .img-info-card,
+    .budget-card .img-info-card,
+    .onboarding-card .img-info-card,
+    .api-card .img-info-card {
+        width: 21%;
+        height: 30%;
     }
     .info-card > p {
         text-align: center;
@@ -625,7 +576,6 @@ footer {
     .footer-container {
         height: 80%;
         flex-direction: column;
-        border: 1px #FFF dashed;
         translate: 0 10%;
         align-items: center;
     }
@@ -638,7 +588,6 @@ footer {
     .footer-links {
         width: 100%;
         height: 40%;
-        /* border: 1px red dashed; */
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -647,14 +596,13 @@ footer {
     .footer-link {
         text-align:center;
         width: 100%;
-        /* border: 1px orange dashed; */
         height: 50%;
+        margin-top: 0.5rem;
     }
 
     .footer-button {
         width: 100%;
         height: 25%;
-        /* border: 1px red dashed; */
         justify-content: space-between;
         align-items: center;
     }
