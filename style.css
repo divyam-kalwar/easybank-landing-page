@@ -538,11 +538,11 @@ footer {
 
     .article-cards {
         flex-direction: column;
-        height: 90%;
+        height: 1620px;
     }
 
     .article-card {
-        height: 100rem;
+        height: 400px;
         width: 100%;
         margin-bottom: 1rem;
     }
