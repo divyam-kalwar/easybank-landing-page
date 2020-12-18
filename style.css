@@ -364,7 +364,7 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 45%;
-    translate: 0 55%;
+    transform: translate(0, 55%);
 }
 
 .logo-links {
@@ -565,7 +565,7 @@ footer {
     .footer-container {
         height: 80%;
         flex-direction: column;
-        translate: 0 10%;
+        transform: translate(0, 10%);
         align-items: center;
     }
 
