@@ -471,7 +471,7 @@ footer {
 
     .request-invite {
         flex-direction: column;
-        height: 1200px;
+        height: 800px;
     }
 
     .invite-main {
@@ -482,25 +482,33 @@ footer {
         align-items: center;
         align-content: center;
         text-align: center;
-        font-size: 0rem;
         margin: auto;
+        padding-left: 0;
     }
     .invite-main h1 {
-        /* width: 100%; */
+        width: 100%;
+        border: 1px red dashed;
         font-size: 2.5rem;
+        text-align: center;
     }
     .invite-images {
-        height: 50%;
+        height: 40%;
         width: 100%;
         order: 1;
         border: 1px red dashed;
     }
 
     .img-bg-intro {
-        /* background-size: cover; */
-        background-position: 30% 90%;
-        
+        background-size: 800px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-position: 25% 90%;
     }
+    .img-mockups {
+        background-size: 370px;
+        background-position: center 320%;
+    }
+    
     .why-choose {
         height: 1500px;
         align-items: center;
