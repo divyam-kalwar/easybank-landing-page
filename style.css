@@ -1,0 +1,445 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px ;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%);
+    min-width: 1440px;
+}
+ /* Global */
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+
+.req-button button{
+    background: linear-gradient(left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    background: -webkit-linear-gradient(left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    background: -moz-linear-gradient(left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color:  hsl(0, 0%, 100%);
+    font-weight: bold;
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: hsl(233, 26%, 24%);
+}
+
+p {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+}
+
+/* Header */
+header {
+    background: hsl(0, 0%, 100%);
+    padding-top: 15px;
+    height: 70px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .hamburger-btn {
+    display: none;
+}
+
+header li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header a {
+    font-size: 14px;
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+/* Showcase */
+#showcase {
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: 550px -280px;
+}
+
+#showcase .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#showcase .container .string {
+    padding-top: 90px;
+    padding-left: 80px;
+}
+
+#showcase .container .string h1 {
+    font-size: 50px;
+}
+
+#showcase .container .req-button {
+    padding-top: 15px;
+}
+
+#showcase .container .img img {
+    position: relative;
+    bottom: 125px;
+    left: 125px;
+}
+
+/* Boxes */
+
+#content {
+    background-color: hsl(0, 0, 98%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 220px;
+}
+
+#content .why {
+    width: 90%;
+}
+
+#content .why p {
+    width: 60%;
+}
+
+#content .why h1 {
+    font-size: 40px;
+}
+
+#content .boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 30px;
+}
+
+#content .boxes .box {
+    text-align: left;
+    width: 30%;
+    padding: 10px;
+}
+
+/* Article */
+#articles {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 150px;
+}
+
+#articles .heading{
+    width: 90%;
+}
+
+#articles .art-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+#articles .art-box .article img {
+    width:  250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#articles .art-box .article {
+    width: 250px;
+}
+
+#articles .art-box .article .string {
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#articles .art-box .article h3 {
+    font-size: 16px;
+    color: hsl(233, 26%, 24%);;
+}
+
+#articles .art-box .article h6 {
+    font-size: 10px;
+    color: hsl(233, 26%, 24%);;
+}
+
+#articles .art-box .article p {
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(233, 26%, 24%);
+    height: 200px;
+}
+
+footer .brand-social {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 60%;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+}
+
+footer nav ul li{
+    width: 100%;
+}
+
+footer nav ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+footer nav ul.first{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+footer nav ul.second{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+footer .rights-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center; 
+    height: 60%;
+}
+
+footer .rights-btn .req-button {
+    align-self: flex-end;
+}
+
+footer .rights-btn .rights {
+    font-size: 18px;
+    color: hsl(233, 8%, 62%);
+}
+
+/* Name */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 375px) {
+    body {
+        min-width: 375px;
+    }
+
+    header {
+        background: hsl(0, 0%, 100%);
+        height: 35px;
+    }
+    
+    header .container {
+        justify-content: space-around;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .container .hamburger-btn {
+        display: block;
+    }
+
+    header nav .hamburger-btn {
+        cursor: pointer;
+    }
+
+    header .container .req-button{
+        display: none;
+    }
+
+    #showcase {
+        width: auto;
+        background-position: -60px -150px;
+        background-size: 700px 500px;
+    }
+    
+    #showcase .container {
+        width: auto;
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    #showcase .container .string{
+        padding: 0;
+    }
+    
+    #showcase .container .string h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #showcase .container .string p {
+        font-size: 15px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #showcase .container .string .req-button {
+        text-align: center;
+    }
+    
+    #showcase .container .img img {
+        width: 370px;
+        height: 450px;
+        position: relative;
+        left: 0;
+        bottom: 135px;
+    }
+
+    #showcase .container .img {
+        height: 310px;
+    }
+
+    #content {
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+        bottom: 0;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    
+    #content .why {
+        width: auto;
+        text-align: center;
+    }
+
+    #content .why p {
+        font-size: 15px;
+        text-align: center;
+        width: auto;
+    }
+
+    #content .why h1 {
+        text-align: center;
+        font-size: 30px
+    }
+    
+    #content .boxes {
+        width: auto;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    #content .boxes .box {
+        width: auto;
+        text-align: center;
+    }
+
+    #content .boxes .box h2 {
+        font-size: 15px;
+    }
+
+    #content .boxes .box p {
+        font-size: 15px;
+    }
+    
+    #articles .heading{
+        width: auto;
+    }
+    
+    #articles .art-box {
+        width: auto;
+        flex-flow: column;
+    }
+    
+    #articles .art-box .article {
+        width: 250px;
+        padding-bottom: 20px;
+
+    }
+
+    footer {
+        height: auto;
+        flex-flow: column;
+        padding: 30px;
+    }
+    
+    footer .brand-social .brand-logo {
+        padding-bottom: 50px;
+    }
+
+    footer nav {
+        flex-flow: column;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    footer nav ul.first, ul.second{
+        align-items: center;
+        padding-right: 50px;
+        margin: 0%;
+        width: auto;
+    }
+
+    footer nav ul li{
+        width: auto;
+        padding: 5px;
+    }
+    
+    footer .rights-btn {
+        align-items: center; 
+        width: auto;
+        height: auto;
+    }
+
+    footer .rights-btn .req-button {
+        align-self: center; 
+    }
+}
