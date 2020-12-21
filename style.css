@@ -1,6 +1,6 @@
 body {
     font-family: 'Public Sans', sans-serif;
-    font-size: 18px ;
+    font-size: 1rem;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ body {
 
 .req-button button.button-btn a {
     text-decoration: none;
-    color: hsl(0, 0%, 100%);;
+    color: hsl(0, 0%, 100%);
 }
 
 .req-button button:hover {
@@ -53,7 +53,7 @@ h1 {
 
 p {
     color: hsl(233, 8%, 62%);
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 /* Header */
@@ -83,7 +83,7 @@ header nav ul li:hover {
 }
 
 header a {
-    font-size: 14px;
+    font-size: 1rem;
     text-decoration: none;
     color: hsl(233, 8%, 62%);
 }
@@ -107,7 +107,7 @@ header a {
 }
 
 #showcase .container .string h1 {
-    font-size: 50px;
+    font-size: 	3rem;
 }
 
 #showcase .container .req-button {
@@ -141,7 +141,7 @@ header a {
 }
 
 #content .why h1 {
-    font-size: 40px;
+    font-size: 	2.5rem;
 }
 
 #content .content-container {
@@ -195,7 +195,7 @@ header a {
 }
 
 #articles .article-container .article h3 {
-    font-size: 16px;
+    font-size: 1rem;
     color: hsl(233, 26%, 24%);
 }
 
@@ -204,12 +204,12 @@ header a {
 }
 
 #articles .article-container .article h6 {
-    font-size: 10px;
+    font-size: 0.5rem;
     color: hsl(233, 26%, 24%);;
 }
 
 #articles .article-container .article p {
-    font-size: 14px;
+    font-size: 	1rem;
 }
 
 /* Footer */
@@ -257,7 +257,7 @@ footer .brand-social .brand-logo img {
 }
 
 footer nav ul li a {
-    font-size: 15px;
+    font-size: 0.9375rem;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
@@ -287,13 +287,13 @@ footer .rights-btn .req-button {
 }
 
 footer .rights-btn .rights {
-    font-size: 18px;
+    font-size: 	1rem;
     color: hsl(233, 8%, 62%);
 }
 
 /* Name */
 .attribution {
-    font-size: 11px;
+    font-size: 0.5rem;
     text-align: center;
 }
 
@@ -353,14 +353,14 @@ footer .rights-btn .rights {
     }
     
     #showcase .container .string h1 {
-        font-size: 30px;
+        font-size: 2rem;
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
     }
 
     #showcase .container .string p {
-        font-size: 15px;
+        font-size: 	1rem;
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
@@ -397,14 +397,14 @@ footer .rights-btn .rights {
     }
 
     #content .why p {
-        font-size: 15px;
+        font-size: 	1rem;
         text-align: center;
         width: auto;
     }
 
     #content .why h1 {
         text-align: center;
-        font-size: 30px
+        font-size: 	2rem;
     }
     
     #content .content-container {
@@ -419,11 +419,11 @@ footer .rights-btn .rights {
     }
 
     #content .content-container .content-box h2 {
-        font-size: 15px;
+        font-size: 	1rem;
     }
 
     #content .content-container .content-box p {
-        font-size: 15px;
+        font-size: 	1rem;
     }
     
     #articles .heading{
