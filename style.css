@@ -273,7 +273,6 @@ footer .rights-btn .rights {
 @media all and (max-width: 375px) {
     body {
         min-width: 375px;
-        min-height: 667px;
     }
 
     header {
