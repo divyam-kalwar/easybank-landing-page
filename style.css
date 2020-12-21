@@ -34,6 +34,12 @@ body {
     color: hsl(0, 0%, 100%);;
 }
 
+.req-button button:hover {
+    background: linear-gradient(left, hsl(130, 60%, 45%), hsl(185, 65%, 45%));
+    background: -webkit-linear-gradient(left,  hsl(130, 60%, 45%), hsl(185, 65%, 45%));
+    background: -moz-linear-gradient(left,  hsl(130, 60%, 45%), hsl(185, 65%, 45%));
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -70,6 +76,10 @@ header .container {
 header li {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+header nav ul li:hover {
+    border-bottom: 1px solid lightgreen;
 }
 
 header a {
@@ -186,7 +196,11 @@ header a {
 
 #articles .art-box .article h3 {
     font-size: 16px;
-    color: hsl(233, 26%, 24%);;
+    color: hsl(233, 26%, 24%);
+}
+
+#articles .art-box .article h3:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 #articles .art-box .article h6 {
@@ -228,6 +242,18 @@ footer nav {
 
 footer nav ul li{
     width: 100%;
+}
+
+footer nav ul li a:hover{
+    color: hsl(136, 65%, 51%);
+}
+
+footer .social-media .social-media-logo a img:hover{
+    filter: invert(0.4) sepia(0.5) saturate(8.5) hue-rotate(151.2deg) brightness(1.2);
+}
+
+footer .brand-social .brand-logo img {
+    filter:  brightness(0) invert(1);
 }
 
 footer nav ul li a {
