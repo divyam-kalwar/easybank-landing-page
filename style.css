@@ -29,6 +29,11 @@ body {
     width: 150px;
 }
 
+.req-button button.button-btn a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -273,6 +278,11 @@ footer .rights-btn .rights {
 @media all and (max-width: 375px) {
     body {
         min-width: 375px;
+    }
+    
+    .req-button button.button-btn a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);;
     }
 
     header {
