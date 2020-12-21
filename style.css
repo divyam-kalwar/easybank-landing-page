@@ -144,14 +144,14 @@ header a {
     font-size: 40px;
 }
 
-#content .boxes {
+#content .content-container {
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin-top: 30px;
 }
 
-#content .boxes .box {
+#content .content-container .content-box {
     text-align: left;
     width: 30%;
     padding: 10px;
@@ -171,44 +171,44 @@ header a {
     width: 90%;
 }
 
-#articles .art-box {
+#articles .article-container {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin-top: 20px;
 }
 
-#articles .art-box .article img {
+#articles .article-container .article img {
     width:  250px;
     height: 200px;
     border-radius: 5px;
 }
 
-#articles .art-box .article {
+#articles .article-container .article {
     width: 250px;
 }
 
-#articles .art-box .article .string {
+#articles .article-container .article .article-content {
     background-color: hsl(0, 0%, 100%);
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#articles .art-box .article h3 {
+#articles .article-container .article h3 {
     font-size: 16px;
     color: hsl(233, 26%, 24%);
 }
 
-#articles .art-box .article h3:hover {
+#articles .article-container .article h3:hover {
     color: hsl(136, 65%, 51%);
 }
 
-#articles .art-box .article h6 {
+#articles .article-container .article h6 {
     font-size: 10px;
     color: hsl(233, 26%, 24%);;
 }
 
-#articles .art-box .article p {
+#articles .article-container .article p {
     font-size: 14px;
 }
 
@@ -248,7 +248,7 @@ footer nav ul li a:hover{
     color: hsl(136, 65%, 51%);
 }
 
-footer .social-media .social-media-logo a img:hover{
+footer .social-media .logo a img:hover{
     filter: invert(0.4) sepia(0.5) saturate(8.5) hue-rotate(151.2deg) brightness(1.2);
 }
 
@@ -407,22 +407,22 @@ footer .rights-btn .rights {
         font-size: 30px
     }
     
-    #content .boxes {
+    #content .content-container {
         width: auto;
         flex-flow: column;
         align-items: center;
     }
     
-    #content .boxes .box {
+    #content .content-container .content-box {
         width: auto;
         text-align: center;
     }
 
-    #content .boxes .box h2 {
+    #content .content-container .content-box h2 {
         font-size: 15px;
     }
 
-    #content .boxes .box p {
+    #content .content-container .content-box p {
         font-size: 15px;
     }
     
@@ -430,12 +430,12 @@ footer .rights-btn .rights {
         width: auto;
     }
     
-    #articles .art-box {
+    #articles .article-container {
         width: auto;
         flex-flow: column;
     }
     
-    #articles .art-box .article {
+    #articles .article-container .article {
         width: 250px;
         padding-bottom: 20px;
 
