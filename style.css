@@ -114,7 +114,7 @@ body{
             display:flex;
             flex-direction: column;
             align-items: center;
-            background-image:url('./images/images_image-mockups.png'),url('./images/bg-intro-mobile.svg');
+            background-image:url('./images/image-mockups.png'),url('./images/bg-intro-mobile.svg');
             background-repeat:no-repeat,no-repeat;
             background-size:96%,100%;;
             background-position:100% -150px,100% 0;
@@ -124,10 +124,10 @@ body{
             background-repeat:no-repeat,no-repeat;
             background-size:96%,100%;;
             background-position:100% -150px,100% 0;/* backup for browers which doesn't Support gradient*/
-            background-image:linear-gradient(rgb(32, 31, 31),white),url('./images/images_image-mockups.png'),url('./images/bg-intro-mobile.svg');
+            background-image:url('./images/image-mockups.png'),url('./images/bg-intro-mobile.svg'),linear-gradient(rgb(32, 31, 31),white);
             background-repeat:no-repeat,no-repeat,no-repeat;
-            background-size:100%,96%,100%;
-            background-position:0 0,100% -150px,100% 0; 
+            background-size:96%,100%,100%;
+            background-position:100% -150px,100% 0,0 0;
       }
       #desktop-phones{
             display: none;
