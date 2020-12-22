@@ -258,13 +258,13 @@ footer nav ul li a {
     color: hsl(0, 0%, 100%);
 }
 
-footer nav ul.first{
+footer nav ul.first-list{
     display: flex;
     justify-content: space-between;
     flex-flow: column;
 }
 
-footer nav ul.second{
+footer nav ul.second-list{
     display: flex;
     justify-content: space-between;
     flex-flow: column;
@@ -442,7 +442,7 @@ footer .rights-btn .rights {
         margin: 20px;
     }
     
-    footer nav ul.first, ul.second{
+    footer nav ul.first-list, ul.second-list{
         align-items: center;
         padding-right: 50px;
         margin: 0%;
