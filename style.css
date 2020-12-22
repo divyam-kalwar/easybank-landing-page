@@ -248,10 +248,6 @@ footer .social-media .logo a img:hover{
     filter: invert(0.4) sepia(0.5) saturate(8.5) hue-rotate(151.2deg) brightness(1.2);
 }
 
-footer .brand-social .brand-logo img {
-    filter:  brightness(0) invert(1);
-}
-
 footer nav ul li a {
     font-size: 0.9375rem;
     text-decoration: none;
