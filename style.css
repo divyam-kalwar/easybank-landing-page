@@ -582,10 +582,10 @@ body{
       }
 
       #bottom-logo{
-            width:100%;
+            width:90%;
             margin-left:5%;
-            margin-top:10%;
-            padding-bottom: 40%;
+            /* margin-top:40%; */
+            padding-bottom: 30%;
       }
 
       .icons{
@@ -606,9 +606,6 @@ body{
             fill:rgb(26, 211, 149);
             transition:0.4s;
       }
-
-     
-
       .contact-us{
             display:flex;
             flex-direction: column;
