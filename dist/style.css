@@ -342,7 +342,7 @@ body{
 @media (min-width: 1301px) {
       .button {
             font-size: 18px;
-            color:hsl(0, 0%, 98%);
+            color:hsl(225, 12%, 87%);
             border-radius: 25px;
             padding:10px;
             border: none;
@@ -353,8 +353,9 @@ body{
       }
       
       .button:hover{
-            transition:0.5s;
-            color:hsl(231, 11%, 48%);
+            transition:0.7s;
+            color:hsl(0, 0%, 98%);
+            background-image:linear-gradient(90deg,hsl(192, 70%, 51%),hsl(136, 65%, 51%));
       }
       
       ul{
@@ -405,7 +406,7 @@ body{
       }
       header .button {
             font-size: 18px;
-            color:hsl(0, 0%, 98%);
+            color:hsl(225, 12%, 87%);
             border-radius: 25px;
             padding:10px;
             border: none;
@@ -414,9 +415,7 @@ body{
             margin-top:-18px;
             background-image:linear-gradient(90deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
       }
-      header .button:hover{
-            color:hsl(231, 11%, 48%);
-      }
+
       header img{
             width: 200px;
       }
