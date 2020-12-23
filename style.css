@@ -23,10 +23,9 @@ header{
     color: grey;
 }
 .top-nav li a:hover{
+    color: gray;
+    border-bottom:2px solid greenyellow ;
     
-    background: -webkit-linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .head-logo{
     transform: scale(1.3);
@@ -192,4 +191,48 @@ footer ul li a{
 }
 .social-media div:hover,li a:hover{
     color: hsl(136, 65%, 51%);
+}
+.mobnav{
+    display: none;
+}
+@media (max-width:600px){
+    *{
+        width: 100%;
+        text-align: center;
+    }
+    header{
+        display: none;
+    }
+    .mobnav {
+        display: block;
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .mobnav #myLinks {
+        display: none;
+      }
+      
+      .mobnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .mobnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .mobnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
 }
