@@ -42,7 +42,7 @@ body{
             background:hsl(0, 0%, 98%);
       }
       #company-logo{
-            width:100%;
+            width:90%;
             margin-top: 1%;;
             margin-left:10%;
       }
@@ -84,23 +84,28 @@ body{
       header img{
             width:40%;
       }
-      .toggle-button{
+      .toggle-button {
             display: inline;
             position: absolute;
-            width: 25%;
-            top: 3%;
-            left:80.5%;
-      }
+            width: 13%;
+            top: 1%;
+            left: 80%;
+            padding-top: 15px;
+            /* overflow-x: hidden; */
+        }
       .toggle-button.active{
             display:none;
       }
-      
+      #hamburger.active{
+            display:none;
+      }
       .closebtn {
             display: none;
             position: absolute;
             width: 17%;
             top: 2%;
-            left:82%;
+            left:83%;
+            padding-top:3px;
             display:none;
       }
       .closebtn.active{
@@ -395,12 +400,12 @@ body{
       .menu-item:hover a {
             color: black;
             text-align:center;
-            padding-bottom:66px;
+            padding-bottom:68px;
             background: /* gradient can be an image */
             linear-gradient(90deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%))
             left 
             bottom
-            hsl(0, 0%, 100%)
+            hsl(0, 0%, 98%)
             no-repeat; 
             background-size:100% 5px ;
       }
