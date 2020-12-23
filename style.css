@@ -5,10 +5,12 @@
     font-family: 'Public Sans', sans-serif;
 }
 header{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 15px;
-    
+    padding:15px 0 8px 0 ;
+    background-color: white;
+    z-index: 1;
 }
 .top-nav li{
     display: inline;
@@ -35,4 +37,39 @@ header{
     border-radius: 20px;
     padding: 12px 20px;
     font-size: 15px;
+}
+.intro{
+    background-color: #f9f9f9;
+    height: 70vh;
+}
+.intro-title{
+    font-size: 2.5em;
+    position: relative;
+    left: 245px;
+    top:170px
+}
+.intro-content{
+    position: absolute;
+    top:340px;
+    left: 245px;
+    color:gray;
+    width: 22%;
+}
+.middle-button{
+    position: absolute;
+    top: 430px;
+    left: 245px;
+}
+.intro-bgimg{
+    position: relative;
+    top:-40vh;
+    left: 45vw;
+    width: 50vw;
+    height: 300px;
+    
+}
+.intro-mockimg{
+    position: absolute;
+    top: -5vh;
+    left: 53vw;
 }
