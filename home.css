@@ -35,3 +35,39 @@
   color: #a5a4a9;
   font-weight: 700;
 }
+
+.intro {
+    padding: 10em 10em;
+    margin-top: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fafafa;
+    background-image: url(/images/image-mockups.png),
+      url(/images/bg-intro-desktop.svg);
+    background-position-x: 116%, 650px;
+    background-position-y: 60%, 60%;
+    /* background-position: 1040px, 10px, 1070px,10px; */
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    color: #2e324b;
+  }
+  
+  .intro div {
+    margin-top: 0.7em;
+  }
+  .intro h1 {
+    width: 45%;
+    font-size: 4em;
+    margin: 0.15em 0;
+    line-height: 1.5em;
+    color: #37384c;
+  }
+  .intro-desc {
+    width: 49%;
+    line-height: 1.5em;
+    color: #a5a4a9;
+    font-size: 1.3em;
+  }
