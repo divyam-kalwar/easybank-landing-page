@@ -71,3 +71,44 @@
     color: #a5a4a9;
     font-size: 1.3em;
   }
+
+.features {
+    background-color: #f4f5f7;
+    padding: 5em 10em;
+    background-image: url(/images/image-mockups.png);
+    background-position-x: 116%;
+    background-position-y: -850px;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .features-child1 {
+    width: 60%;
+    margin-bottom: 5em;
+  }
+  .features-child1 h1 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  .features-child1 p {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .features-child2 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+    font-size: 1em;
+  }
+  .feature-cards {
+    width: 17%;
+  }
+  .feature-cards img {
+    width: 40%;
+    margin-bottom: 1em;
+  }
+  .features p {
+    color: #a5a4a9;
+  }
+  .features h1 {
+    color: #37384c;
+  }
