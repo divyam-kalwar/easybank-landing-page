@@ -384,14 +384,14 @@ main {
 
   #feature-container {
     position: relative;
-    top: 9rem;
+    top: 10rem;
   }
   #feature-content {
     position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 12rem;
   }
   #feature-content h1 {
     font-size: 2.3rem;
