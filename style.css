@@ -40,11 +40,20 @@ nav {
     justify-content: space-between;
     list-style: none;
     color: hsl(233, 8%, 62%);
+    height: 4rem;
+    margin:0;
 }
 
 #nav-links li {
+    display: flex;
     font-size: 0.9rem;
     cursor: pointer;
+    align-items: center;
+    height: 3.778rem;
+}
+
+#nav-links li:hover{
+  border-bottom: 4px solid hsl(136, 65%, 51%);
 }
 
 .btn {
@@ -62,6 +71,7 @@ nav {
 main {
     position:relative;
     top:4rem;
+    overflow-x: hidden;
     z-index: 1;
 }
 
@@ -159,11 +169,15 @@ main {
   background: hsl(0, 0%, 98%);
   margin-top: -1.5rem;
 }
-
+.cont{
+  max-width: 1600px;
+  margin: 0 auto;
+}
 #article-container h1 {
+  max-width: 1600px;
   position: relative;
-  top: 6rem;
-  left: 6rem;
+  top: 5rem;
+  left :1rem;
   color: hsl(233, 26%, 24%);
 }
 
@@ -172,8 +186,6 @@ main {
   justify-content: space-between;
   position: relative;
   top: 6rem;
-  left: 6rem;
-  width: 80%; 
 }
 
 .article-img {
@@ -264,11 +276,6 @@ main {
 .footer-btn {
   margin-left: 8.5rem;
   margin-bottom: 1rem;
-}
-
-#footer-logo > img{
-  -webkit-filter: invert(100%);
-  filter: brightness(500%);
 }
 
 /* for the attribution */
