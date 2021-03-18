@@ -6,7 +6,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-size: 18px;
-    height: 100vh;
+    width: 100%;
     font-family: "Public Sans", sans-serif;
 }
 
@@ -31,8 +31,12 @@ header {
     background: hsl(0, 0%, 100%);
 }
 
+#logo {
+  position: relative;
+  left: -6rem;
+}
 nav {
-    width: 40%;
+    width: 25%;
 }
 
 #nav-links {
@@ -50,6 +54,7 @@ nav {
     cursor: pointer;
     align-items: center;
     height: 3.778rem;
+    padding: 0 1rem;
 }
 
 #nav-links li:hover{
@@ -61,7 +66,7 @@ nav {
     color: hsl(0, 0%, 100%);;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     padding: 0.7rem 1.5rem;
-    border-radius: 1rem;
+    border-radius: 10rem;
     cursor: pointer;
     outline: none;
   }
@@ -72,6 +77,7 @@ main {
     position:relative;
     top:4rem;
     overflow-x: hidden;
+    overflow-y: hidden;
     z-index: 1;
 }
 
@@ -82,32 +88,36 @@ main {
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    background-position-x: 35rem;
+    background-position-x: 45rem;
     min-height: 35rem;
 }
 
 #main-content {
     position: absolute;
     width: 35%;
-    top:10rem;
-    left:7rem;  
+    top: 6rem;
+    left: 6rem;  
 }
 
 #main-content h1 {    
     color: hsl(233, 26%, 24%);;
-    font-size: 3rem;  
+    font-size: 3rem; 
+    font-weight: lighter; 
 }
 
 #main-content p {
     color: hsl(233, 8%, 62%);
     font-size: 1rem;
     max-width: 80%;
+    text-align: left;
+    line-height: 1.5;
 }
 
 #main-image {
     position: absolute;
-    top: 4rem;
-    right: -2rem;
+    top: -5rem;
+    transform: scale(1.3);
+    right: 0rem;
 }
 
 #main-image img {
@@ -133,11 +143,15 @@ main {
 
 #feature-content h1 {
     color: hsl(233, 26%, 24%);
+    font-size: 2.1rem;
+    font-weight: lighter;
   }
 
 #feature-content p {
-    width: 50%;
-    color: hsl(233, 8%, 62%);
+  width: 40%;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: hsl(233, 8%, 62%);
   }
 
 #feature-box {
@@ -146,7 +160,7 @@ main {
     position: relative;
     top: 8rem; 
     margin-left: 6rem;
-    width: 80%;
+    width: 90%;
   }
 
 .feature-section {
@@ -155,11 +169,13 @@ main {
 
 .feature-section h4{
     color: hsl(233, 26%, 24%);
+    font-weight: lighter;
 }
 
 .feature-section p {
     color: hsl(233, 8%, 62%);
     font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 /* for the article container */
@@ -179,6 +195,8 @@ main {
   top: 5rem;
   left :1rem;
   color: hsl(233, 26%, 24%);
+  font-size: 2.1rem;
+  font-weight: lighter;
 }
 
 #article-content {
@@ -191,6 +209,8 @@ main {
 .article-img {
   width: 100%;
   height: 50%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .article-single {
@@ -198,19 +218,27 @@ main {
 }
 
 .author {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
   color: hsl(233, 8%, 62%);
   margin: 1rem;
 }
 
 .article-heading {
   color: hsl(233, 26%, 24%);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   margin: 1rem;
+  font-weight: lighter;
+}
+.article-heading:hover{
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
 }
 
 .article-para {
   color: hsl(233, 8%, 62%);
+  line-height: 1.2rem;
   font-size: 0.9rem;
   margin: 1rem;
   padding-bottom: 2.5rem;
@@ -234,6 +262,8 @@ main {
   align-items: center;
   width: 40%;
   color: white;
+  position: relative;
+  left: -6rem;
 }
 
 #footer-logo{
@@ -265,6 +295,10 @@ main {
    color: hsl(136, 65%, 51%);
 }
 
+#footer-two{
+  position: relative;
+  right: -2rem;
+}
 #footer-two input {
   margin-bottom: 1.1rem;
   
@@ -296,7 +330,7 @@ main {
 
 /* for the mobile view */
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 300px) and (max-width: 800px){
 
   /* for the header */
   
@@ -307,16 +341,18 @@ main {
 
   header {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     background: hsl(0, 0%, 100%);
-    height: 4.5rem;
+    height: 4rem;
     width: 100%;
   }
 
   #logo {
     position: relative;
-    left: -3.5rem;
+    left: 22px;
   }
   
   #mobile-res {
@@ -327,12 +363,18 @@ main {
   
   /* this will activate on clicking the hamburger */
   #mobile-header{
+    /* transition: 3s; */
     /* display: flex;  */
-    justify-content: center; 
+    /* justify-content: center;  */
     position: absolute; 
-    top: 5rem; 
-    left: 2.8rem;
-    width: 85%;
+    margin-left: 15%;
+    /* top: 5rem; 
+    left: 2.8rem; */
+    margin-top: 500px;
+    background-color: white;
+    border-radius: 35px;
+    width: 70%;
+    box-shadow: 2px 2px 100px rgb(56 55 55);
   }
 
   #mobile-nav-links{
@@ -340,37 +382,53 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
-    background: rgb(255, 255, 255); 
-    color: rgb(45, 49, 77); 
-    width: 80%; 
-    padding: 2rem 0px; 
-    border-radius: 10px; 
+    color: rgb(45, 49, 77);  
+    padding: 25px 0;  
     min-height: 15rem;
     list-style: none;
+  }
+
+  #mobile-nav-links>li:hover{
+    color: hsl(136, 65%, 51%);
+
   }
 
   /* for the main container */
 
   #main-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     background-image: url("../images/bg-intro-mobile.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     background-position-x: 0rem;
-    background-position-y: -1rem;
+    background-position-y: -9rem;
     min-height: 35rem;
   }
   #main-image {
-    position: absolute;
-    top: -13rem;
-    left: -3rem;
-    transform: scale(0.7);
+    position: relative;
+    top: -10rem;
+    /* left: 0rem; */
+    transform: scale(0.9);
+    min-width: 100%;
+  }
+  #main-image img{
+    max-height: 45rem;
+    width: 95%;
   }
   #main-content {
-    position: absolute;
-    width: 90%;
-    top: 22rem;
-    left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    /* position: absolute; */
+    width: 80%;
+    top: 35rem;
+    /* margin-left: 80px; */
+    left: unset;
     text-align: center;
   }
   #main-content h1 {
@@ -391,7 +449,7 @@ main {
 
   #feature-container {
     position: relative;
-    top: 10rem;
+    top: 20rem;
   }
   #feature-content {
     position: static;
@@ -445,13 +503,19 @@ main {
 
   #article-container {
     position: relative;
-    top: 8rem;
-    padding-bottom: 10rem;
+    top: 20rem;
+    margin-bottom: 25rem;
+  }
+  .cont{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
   #article-container h1 {
-    position: relative;
+    /* position: relative;
     top: 5rem;
-    left: 7rem;
+    left: 7rem; */
     font-weight: lighter;
     letter-spacing: 0.11rem;
     font-size: 2rem;
@@ -470,17 +534,24 @@ main {
 
   #footer-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     top: 12rem;
     flex-direction: column;
     min-height: 30rem;
   }
   #footer-one {
     display: flex;
-    width: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+    left:unset
   }
   #footer-logo {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 3rem;
   }
   #footer-social {
@@ -493,17 +564,25 @@ main {
     padding: 0rem 0.5rem;
   }
   .footer-link {
-    display: flex;
-    margin-left: -2.5rem;
+    position: relative;
+    left:-17px;
+    /* right: 10px; */
+    /*margin-left: -2.5rem; */
     text-align: center;
-    margin-top: -1.5rem;
+    height: 122px;
+    width: 165px;
+    margin: -10px;
+    /* padding: 14px; */
+    /* margin-top: -1.5rem; */
   }
-  #links{
+  /* #links{
     margin-top: -3rem;
-  }
+  } */
   #footer-two {
     display: flex;
     flex-direction: column;
+    position: unset;
+    margin-top: 20px;
   }
 
   .footer-btn {
