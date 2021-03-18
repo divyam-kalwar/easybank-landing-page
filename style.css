@@ -18,8 +18,8 @@ html {
 
 body {
     max-width: 100%;
-    background-color: hsl(0, 0%, 98%);
     overflow-x: hidden;
+    background-color: white;
 }
 
 .attribution {
@@ -40,7 +40,7 @@ body {
 
 header {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     padding-top: 1rem;
     background-color: white;
     position: relative;
@@ -308,7 +308,7 @@ p {
     font-size: 1.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
     header {
         height: 5rem;
     }
@@ -362,7 +362,7 @@ p {
         padding: .4rem;
         content: url(./images/icon-close.svg);
     }
-    #toggle:checked~* {
+    #toggle:checked~blur {
         filter: blur(5px);
     }
     .footer {
@@ -394,7 +394,7 @@ p {
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 855px) {
     .home {
         flex-direction: column-reverse;
         justify-content: center;
@@ -433,7 +433,7 @@ p {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 855px) {
     .home-text {
         text-align: left;
         margin-top: 15rem;
