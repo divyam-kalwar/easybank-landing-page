@@ -305,8 +305,8 @@ footer {
 }
 
 .social-media-links a img:hover {
-  filter: invert(27%) sepia(51%) saturate(6500%) hue-rotate(80deg)
-    brightness(200%) contrast(60%);
+  filter: brightness(200%) contrast(60%) invert(27%) sepia(50%) saturate(600%)
+    hue-rotate(80deg);
 }
 @media screen and (min-width: 1025px) {
   .navbar {
@@ -327,11 +327,20 @@ footer {
   header .request {
     display: none;
   }
-
+  header.wrapper {
+    justify-content: space-between;
+  }
+  header.logo {
+    margin-left: 20px;
+  }
+  header #menu-hamburger {
+    display: block;
+    padding-right: 20px;
+  }
   .navbar {
     display: none;
     position: absolute;
-    top: 150%;
+    top: 130%;
     left: 10vw;
     right: 10vw;
     height: 250px;
@@ -342,7 +351,8 @@ footer {
   }
 
   .navbar .navbar-list .navbar-list-items a {
-    color: black;
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
   }
 
   .navbar .navbar-list {
@@ -384,10 +394,6 @@ footer {
     position: absolute;
     top: 400px;
     width: 80%;
-  }
-
-  #menu-hamburger {
-    display: block;
   }
 
   .info .info-container {
