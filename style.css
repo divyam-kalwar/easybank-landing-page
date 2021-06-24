@@ -337,14 +337,16 @@ footer {
     display: block;
     padding-right: 20px;
   }
+  header #menu-close {
+    padding-right: 20px;
+  }
   .navbar {
     display: none;
     position: absolute;
     top: 130%;
-    left: 10vw;
-    right: 10vw;
-    height: 250px;
-    border-radius: 10px;
+    left: 30px;
+    height: 300px;
+    border-radius: 5px;
     width: 80vw;
     background-color: white;
     box-shadow: 10px 10px 50px black;
