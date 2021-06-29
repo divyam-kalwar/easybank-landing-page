@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css" />
 
   <title>Easybank landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
     .attribution {
       font-size: 11px;
@@ -26,7 +26,7 @@
 
 <body>
   <header>
-    <nav class="headContainer">
+    <nav class="headContainer container">
       <img class="logo" src="./images/logo.svg" alt="logo" />
       <div class="menu">
         <a href="#">Home</a>
@@ -41,7 +41,7 @@
 
 
   <section class="heading-info">
-    <div class="container-head">
+    <div class="container-head container">
       <div class="info-section">
         <h1>Next generation digital banking</h1>
         <p>
@@ -56,7 +56,7 @@
   </section>
 
   <section class="details">
-    <div class="details-container">
+    <div class="details-container container">
       <h2>Why choose Easybank?</h2>
       <p>
         We leverage Open Banking to turn your bank account into your financial
@@ -101,7 +101,7 @@
 
 
   <section class="article-section">
-    <div class="article-details">
+    <div class="article-details container">
       <h2>Latest Articles</h2>
       <div class="articles">
         <div class="article-card">
@@ -160,12 +160,17 @@
       </div>
       <div class="footer-menu">
         <div class="footer-links">
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-          <a href="#">Support</a>
-          <a href="#">Privacy Policy</a>
+          <div class="float-left">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="float-Right">
+            <a href="#">Careers</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+
         </div>
         <div class="footer-btn">
           <button class="btn">Request Invite</button>
@@ -173,8 +178,8 @@
         </div>
       </div>
     </div>
-    <div class="attribution">Coded by <a href="#">Vivek Kumar Sahoo</a>.</div>
   </footer>
+  <div class="attribution">Coded by <a href="#">Vivek Kumar Sahoo</a>.</div>
 </body>
 
 </html>

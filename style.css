@@ -7,9 +7,13 @@ p {
   color: rgba(128, 128, 128, 0.788);
   width: 300px;
 }
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
 .headContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0.5rem 0 0.5rem 0;
 }
 .headContainer * {
@@ -27,7 +31,8 @@ p {
   padding: 20px 10px;
 }
 .menu a:hover {
-  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(133, 225, 163, 1);
 }
 .logo {
   position: relative;
@@ -35,10 +40,8 @@ p {
   height: 100%;
 }
 .btn {
-  height: 30px;
   outline: none;
   border: none;
-  background: rgb(133, 225, 163);
   background: linear-gradient(
     90deg,
     rgba(133, 225, 163, 1) 35%,
@@ -48,10 +51,8 @@ p {
   color: #fff;
   border-radius: 50px;
   font-size: 1.3rem;
-  padding: 0.1% 1%;
-  text-align: center;
+  padding: 1rem 1rem;
   cursor: pointer;
-  align-self: center;
 }
 .btn:hover {
   transform: translateY(-0.2rem);
@@ -62,9 +63,8 @@ p {
 .container-head {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 1%;
 }
 .heading-info {
   background: #fafafa;
@@ -74,11 +74,14 @@ p {
   align-self: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 50%;
+  gap: 50px;
 }
 .info-section h1 {
   font-size: 300%;
+}
+.info-section .btn {
+  align-self: flex-start;
 }
 .bg-img {
   content: url("./images/image-mockups.png");
@@ -87,23 +90,23 @@ p {
   float: left;
 }
 .details {
+  background-color: #f4f5f7;
+}
+.details-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 11%;
-  background-color: #f4f5f7;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 45px 0;
 }
 .details-container h2 {
   font-size: 300%;
-  padding-left: 9%;
 }
-.details-container > p {
-  padding-left: 9%;
-}
+
 .cards {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .cards p {
   color: rgba(128, 128, 128, 0.788);
@@ -120,16 +123,16 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10rem 15rem;
+  padding: 40px 0;
 }
 .article-details h2 {
-  font-size: 4rem;
-  margin-bottom: 4rem;
-  font-weight: normal;
+  margin-bottom: 2rem;
+  font-size: 300%;
 }
 .articles {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .articles .article-card {
   flex: 1;
@@ -137,7 +140,6 @@ p {
   min-width: 22rem;
   max-width: 20rem;
   flex-direction: column;
-  margin-right: 2rem;
   background-color: #fff;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -149,24 +151,109 @@ p {
 .article-card img {
   height: 14rem;
   border-radius: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .article-card h6 {
   color: rgba(128, 128, 128, 0.644);
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  padding: 0 2rem;
+}
+.article-card p:hover {
+  color: rgba(133, 225, 163, 1);
 }
 .article-card h3 {
   font-weight: normal;
   font-size: 2rem;
   margin-bottom: 1rem;
-  padding: 0 2rem;
+
   align-self: flex-start;
 }
 .article-card p {
-  padding: 0 2rem;
   color: rgba(128, 128, 128, 0.733);
   line-height: 2rem;
   font-size: 1.2rem;
+}
+footer {
+  background-color: #2d314e;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 15rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.social-handle img {
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+.footer-logo {
+  width: 15rem;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.footer-btn {
+  flex: 2;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-btn p {
+  margin-top: 2.2rem;
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.toggle-btn {
+  background-image: url(./images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  padding-right: 4rem;
+  margin-right: 5rem;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 3;
+}
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  padding: 1rem 1rem;
+}
+.footer-links a:hover {
+  color: rgb(109, 177, 109);
+}
+.float-left {
+  display: flex;
+  flex-direction: column;
+}
+.float-Right {
+  display: flex;
+  flex-direction: column;
+}
+.footer-btn p {
+  align-self: center;
+}
+.footer-container .social-handle {
+  align-self: flex-end;
 }
