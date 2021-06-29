@@ -14,7 +14,7 @@ p {
 .headContainer {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .headContainer * {
   text-decoration: none;
@@ -23,6 +23,13 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.toggle-btn {
+  background-image: none;
+}
+
+#toggle {
+  display: none;
 }
 .menu a {
   opacity: 150%;
@@ -40,7 +47,6 @@ p {
   height: 100%;
 }
 .btn {
-  outline: none;
   border: none;
   background: linear-gradient(
     90deg,
@@ -135,7 +141,6 @@ p {
   justify-content: space-between;
 }
 .articles .article-card {
-  flex: 1;
   display: flex;
   min-width: 22rem;
   max-width: 20rem;
@@ -186,6 +191,7 @@ footer {
 .social-handle img {
   margin: 1rem 0.5rem;
   cursor: pointer;
+  filter: rgba(133, 225, 163, 1);
 }
 .footer-logo {
   width: 15rem;
@@ -220,14 +226,6 @@ footer {
   font-size: 1.4rem;
 }
 
-.toggle-btn {
-  background-image: url(./images/icon-hamburger.svg);
-  background-repeat: no-repeat;
-  height: 2rem;
-  width: 2rem;
-  padding-right: 4rem;
-  margin-right: 5rem;
-}
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -243,6 +241,7 @@ footer {
 .footer-links a:hover {
   color: rgb(109, 177, 109);
 }
+
 .float-left {
   display: flex;
   flex-direction: column;
@@ -253,7 +252,4 @@ footer {
 }
 .footer-btn p {
   align-self: center;
-}
-.footer-container .social-handle {
-  align-self: flex-end;
 }
