@@ -5,7 +5,6 @@
 }
 p {
   color: rgba(128, 128, 128, 0.788);
-  width: 300px;
 }
 .headContainer {
   display: flex;
@@ -91,6 +90,16 @@ p {
   background-image: url("./images/bg-intro-desktop.svg");
   float: left;
 }
+
+/* .bg-img::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  background-image: url("./images/image-mockups.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+} */
 .details {
   background-color: #f4f5f7;
 }
@@ -138,8 +147,9 @@ p {
 }
 .articles .article-card {
   display: flex;
-  min-width: 22rem;
-  max-width: 20rem;
+  align-items: center;
+  min-width: 17rem;
+  max-width: 15rem;
   flex-direction: column;
   background-color: #fff;
   cursor: pointer;
@@ -150,29 +160,35 @@ p {
   box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 .article-card img {
-  height: 14rem;
+  height: 12rem;
+  width: 17rem;
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 .article-card h6 {
   color: rgba(128, 128, 128, 0.644);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
 }
 .article-card p:hover {
   color: rgba(133, 225, 163, 1);
 }
 .article-card h3 {
   font-weight: normal;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 
   align-self: flex-start;
+}
+.article-section {
+  height: 30%;
 }
 .article-card p {
   color: rgba(128, 128, 128, 0.733);
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  align-self: flex-start;
 }
 footer {
   background-color: #2d314e;
