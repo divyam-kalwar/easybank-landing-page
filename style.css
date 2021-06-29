@@ -7,10 +7,6 @@ p {
   color: rgba(128, 128, 128, 0.788);
   width: 300px;
 }
-.container {
-  max-width: 1500px;
-  margin: auto;
-}
 .headContainer {
   display: flex;
   justify-content: space-between;
@@ -252,4 +248,8 @@ footer {
 }
 .footer-btn p {
   align-self: center;
+}
+.container {
+  max-width: 1500px;
+  margin: auto;
 }
