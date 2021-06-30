@@ -112,3 +112,26 @@ a {
     margin-right: 50%;      
 }
 
+/* Article section */
+
+.flex-article {
+    display: flex;
+}
+
+
+.image-resizing {
+    width: 100%;
+    height: 12.5em;
+}
+
+.article-card {
+    padding: 0.625em;
+}
+.article-card-styling {
+    padding: 1em;
+}
+
+address {
+    color: hsl(233, 8%, 62%);
+}
+
