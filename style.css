@@ -1,7 +1,7 @@
-* {
+/* * {
     outline: 1px solid red !important;
- }
-body {
+ } */
+ body {
     padding: 0;
     margin: 0;
     font-family: 'Public Sans', sans-serif;
@@ -135,3 +135,43 @@ address {
     color: hsl(233, 8%, 62%);
 }
 
+/* footer */
+footer {
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+}
+
+.bottom-logo-image {
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+
+}
+
+footer li {
+    display: block;
+    margin-right: 0.625em;
+}
+
+footer .social-media-logo li{
+    display: inline;
+    margin-right: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+footer ul {
+    margin-left: -2.3em;
+}
+
+.flex-container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer button {
+    margin-left: 3.75em;
+}
+
+footer h4{
+    color: gray;
+}
