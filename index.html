@@ -35,6 +35,7 @@
         <a href="#">Blog</a>
         <a href="#">Careers</a>
       </div>
+      <img class="hamburger" src="./images/icon-hamburger.svg" />
       <button class="btn">Request Invite</button>
     </nav>
   </header>
@@ -197,6 +198,21 @@
     </div>
   </footer>
   <div class="attribution">Coded by <a href="#">Vivek Kumar Sahoo</a>.</div>
+  <script>
+    const ham = document.querySelector( ".hamburger" );
+    const navBar = document.querySelector( ".menu" );
+    ham.addEventListener( "click", () => {
+      ham.classList.toggle( "active" )
+      navBar.classList.toggle( "active" )
+      if ( ham.src.match( "./images/icon-hamburger.svg" ) ) {
+        ham.src = "./images/icon-close.svg"
+      }
+      else {
+        ham.src = "./images/icon-hamburger.svg"
+      }
+    } )
+
+  </script>
 </body>
 
 </html>

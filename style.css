@@ -22,7 +22,9 @@ p {
 .toggle-btn {
   background-image: none;
 }
-
+.hamburger {
+  display: none;
+}
 #toggle {
   display: none;
 }
@@ -301,4 +303,26 @@ footer {
   height: 2.2rem;
   background-color: white;
   color: black;
+}
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    z-index: 100;
+  }
+  .active {
+    left: 10%;
+  }
+  .headContainer .btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
