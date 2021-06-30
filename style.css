@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*header section */
+
+header {
+    color: white;
+    min-width: 10%;
+    background-color: white;
+    margin-top: -0.062em;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .company-logo {
+    margin-top: 1.375em;
+}
+header li {
+    display: inline;
+    padding: 0 0.625em 0 0.625em;
+    font-weight: bold;
+    font-size: 1.125em;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 0.93em;
+    margin-top: 0.62em;
+    padding: 0.93em 1.25em;
+    border-radius: 1.25em;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: 0px;
+}
+
+a {
+    color: hsl(233, 8%, 62%);
+   
+}
