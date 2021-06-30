@@ -1,3 +1,6 @@
+* {
+    outline: 1px solid red !important;
+ }
 body {
     padding: 0;
     margin: 0;
@@ -47,3 +50,40 @@ a {
     color: hsl(233, 8%, 62%);
    
 }
+
+/* section 1 */
+
+.section-1 {
+    height: 35em;
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-position: 32.12em -16.06em;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mockup-image {
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    background-image: url(./images/image-mockups.png);
+    z-index: 7777;
+    background-repeat: no-repeat;
+    height: 40em;
+    background-position: 44.62em -7.25em;
+}
+
+.flex-box-1 {
+    height: 150px;
+    width: 300px;
+    font-size: 1.3em;
+}
+
+.flex-box-2 {
+    height: 150px;
+    width: 300px;
+    font-size: 1em;
+}
+
+
