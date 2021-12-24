@@ -35,9 +35,9 @@
       <div class="logo">
         <img src="./images/logo.svg" alt="logo of company">
       </div>
-
-      <div>
-        <nav>
+      <input type="checkbox" id="toggle">
+      <div class="navbar">
+        <nav  id="collapse-nav" class="collapse-na">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
@@ -49,28 +49,36 @@
       </div>
 
       <div>
-        <button class="primary-btn">Request Invite</button>
+        <button class="primary-btn active-btn">Request Invite</button>
       </div>
+      
+      <label for="toggle" class="deactive-btn">
+            <img src="./images/icon-hamburger.svg" alt="" >
+      </label>
 
     </header>
 
     <section class="banner">
-      <div class="banner-text">
+      <div class="banner-text set-width">
         <h3>Next generation digital banking</h3>
         <p>Take your financial life online. Your easybank account will be one stop-shop for spending
           , saving, budgeting, investing and much more.
         </p>
         <button class="primary-btn">Request Invite</button>
       </div>
-      <div class="banner-image">
-        <img src="./images/bg-intro-desktop.svg" alt="">
+      <div class="banner-image set-width">
+        <img src="./images/bg-intro-desktop.svg" alt="" class="intro">
+        
+        
       </div>
+      
     </section>
+    <img src="./images/image-mockups.png" alt="image-mockups" class="mockup">
 
     <section class="service-container">
-      <div class="text">
+      <div class="text set-width">
         <h2>Why Choose Easybank?</h2>
-        <p class="para">We leverage Open Banking to turn your bank account into your financial hub. Control
+        <p class="para comman-width">We leverage Open Banking to turn your bank account into your financial hub. Control
           your finances like never before.</p>
       </div>
       <div class="services">
@@ -112,7 +120,7 @@
       </div>
       <div class="latest-article">
 
-        <div class="arti-first .comman-width ">
+        <div class="artic comman-width">
           <img src="./images/image-currency.jpg" alt="currency image">
           <h6>By Claire Robinson</h5>
           <h5>Receive money in any currency with no fees</h3>
@@ -121,7 +129,7 @@
           </p>
         </div>
   
-        <div class="arti-second .comman-width ">
+        <div class="artic comman-width">
           <img src="./images/image-restaurant.jpg" alt="restorant image">
           <h6>By Wilson Hutton</h5>
           <h5>Treat yourself without worrying about money</h3>
@@ -130,7 +138,7 @@
           </p>
         </div>
   
-        <div class="arti-third .comman-width">
+        <div class="artic comman-width">
           <img src="./images/image-plane.jpg" alt="plane image">
           <h6>By Wilson Hutton</h5>
           <h5> Take your Easybank card wherever you go</h3>
@@ -139,7 +147,7 @@
           </p>
         </div>
   
-        <div class="arti-fourth .comman-width ">
+        <div class="artic comman-width set-width">
           <img src="./images/image-confetti.jpg" alt="image-confetti">
           <h6> By Claire Robinson</h5>
           <h5>Receive money in any currency with no fees</h3>
@@ -163,11 +171,11 @@
         </div>
 
         <div class="social-handle">
-          <img src="./images/icon-facebook.svg" alt="facebook image">
-          <img src="./images/icon-youtube.svg" alt="youtube image">
-          <img src="./images/icon-twitter.svg" alt="twitter image">
-          <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
-          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+          <a href="#"><img src="./images/icon-facebook.svg" alt="facebook image"></a>
+          <a href="#"><img src="./images/icon-youtube.svg" alt="youtube image"></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="twitter image"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt="icon-instagram"></a>
         </div>
 
       </div>
