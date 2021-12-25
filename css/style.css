@@ -324,8 +324,21 @@ margin-top:10px;
             transform: translateY(-200%);
         }
        
-        #toggle:checked+ .navbar nav  {
+        #toggle:checked+ .container header .navbar nav {
             transform: translateY(0); 
+        }
+
+        #toggle:checked+ .container header .navbar nav ul li a {
+                    color:hsl(233, 26%, 24%);
+                    font-weight: 600;
+        }
+
+        #toggle:checked+ .container .banner {
+            background-image: linear-gradient(to bottom,hsl(233, 26%, 24%),hsl(233, 8%, 62%),hsl(220, 16%, 96%));
+            opacity: 1;
+        }
+        #toggle:checked+ .container .mockup{
+            display:none;
         }
         nav ul {
             display:flex;
@@ -396,6 +409,7 @@ margin-top:10px;
         display:flex;
         flex-direction:column;
         text-align:left;
+        padding-top:20px;
     }
 
     .latest-article img {
@@ -408,6 +422,10 @@ margin-top:10px;
     .latest-article p,h6,h5 {
         width:70vw;
         margin-left:10px;
+    }
+
+    .artic {
+        margin-top:15px;
     }
     
     /* footer */
