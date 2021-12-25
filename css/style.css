@@ -44,7 +44,8 @@ h3 {
 
 input {
     position:absolute;
-    left:-9999px;
+    left:10px;
+    display:none;
 }
 
 /* header */
@@ -292,7 +293,6 @@ margin-top:10px;
     .container {
         display:flex;
         flex-direction:column;
-        overflow-x: hidden;
         
     }
 
@@ -312,7 +312,7 @@ margin-top:10px;
         nav {
             
             width:60vw;
-            height:50vw;
+            height:65vw;
             position:absolute;
             background-color:white;
             border:1px solid white;
